@@ -1,0 +1,11 @@
+{
+    "version": "0.0.1",
+    "description": "Add explorer context menu entries for vscode - English version.",
+    "depends": "extras/vscode",
+    "installer": {
+        "script": "&(Get-Command reg.exe) import \"$(appdir vscode $global)\\vscode-install-context.reg\""
+    },
+    "uninstaller": {
+        "script": "&(Get-Command reg.exe) import \"$(appdir vscode $global)\\vscode-uninstall-context.reg\""
+    }
+}
