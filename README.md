@@ -1,0 +1,2 @@
+# scoop-srsrns
+scoop buckets
