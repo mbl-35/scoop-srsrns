@@ -20,6 +20,6 @@
         ]
     },
     "uninstaller": {
-        "script": "&(Get-Command reg.exe) import \"$dir\\current\\vscode-uninstall-context.reg\""
+        "script": "&(Get-Command reg.exe) import \"$dir\\vscode-uninstall-context.reg\""
     }
 }
