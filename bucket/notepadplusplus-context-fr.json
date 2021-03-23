@@ -1,7 +1,7 @@
 {
     "version": "0.0.1",
     "description": "Add explorer context menu entries for notepad++ - French version.",
-    "depends": "extras/nodepadplusplus",
+    "depends": "extras/notepadplusplus",
     "url": [
         "https://raw.githubusercontent.com/mbl-35/scoop-srsrns/master/scripts/notepadplusplus-install-context.reg",
         "https://raw.githubusercontent.com/mbl-35/scoop-srsrns/master/scripts/notepadplusplus-uninstall-context.reg"
