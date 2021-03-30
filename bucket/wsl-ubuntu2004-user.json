@@ -1,0 +1,28 @@
+{
+    "homepage": "https://www.microsoft.com/store/apps/9n6svws3rx71",
+    "description": "Ubuntu 20.04 LTS on WSL",
+    "license": "Proprietary",
+    "version": "20.04",
+    "url": "https://aka.ms/wslubuntu2004",
+    "shortcuts": [
+        [
+            "ubuntu2004.exe",
+            "Ubuntu 20.04 LTS"
+        ]
+    ],
+    "installer": {
+        "script": [
+            "Get-Item \"$dir\\wslubuntu2004\" | Rename-Item -NewName \"ubuntu2004.zip\"",
+            "Expand-Archive -Path \"$dir\\ubuntu2004.zip\" -DestinationPath \"$dir\"",
+            "Remove-Item \"$dir\\ubuntu2004.zip\"",
+            "&(Get-Command ubuntu2004.exe) install --root",
+            "&(Get-Command ubuntu2004.exe) run adduser $env:UserName --gecos \"First,Last,RoomNumber,WorkPhone,HomePhone\" --disabled-password",
+            "&(Get-Command ubuntu2004.exe) run usermod -aG sudo $env:UserName",
+            "&(Get-Command ubuntu2004.exe) run 'usermod --password $(openssl passwd -crypt ChangeMe) '$env:UserName",
+            "&(Get-Command ubuntu2004.exe) config --default-user $env:UserName"
+        ]
+    },
+    "uninstaller": {
+        "script": "wslconfig /u Ubuntu-20.04"
+    }
+}
