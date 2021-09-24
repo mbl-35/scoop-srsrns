@@ -27,11 +27,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/HenriWahl/Nagstamon/releases/download/$version/Nagstamon-$version-win64.zip",
+                "url": "https://github.com/HenriWahl/Nagstamon/releases/download/v$version/Nagstamon-$version-win64.zip",
                 "extract_dir": "Nagstamon-$version-win64"
             },
             "32bit": {
-                "url": "https://github.com/HenriWahl/Nagstamon/releases/download/$version/Nagstamon-$version-win64.zip",
+                "url": "https://github.com/HenriWahl/Nagstamon/releases/download/v$version/Nagstamon-$version-win64.zip",
                 "extract_dir": "Nagstamon-$version-win32"
             }
         }
