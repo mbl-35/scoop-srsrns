@@ -10,8 +10,8 @@
             "extract_dir": "Nagstamon-3.6.0-win64"
         },
         "32bit": {
-            "url": "https://github.com/HenriWahl/Nagstamon/releases/download/v3.6.0/Nagstamon-3.6.0-win64.zip",
-            "hash": "85274e36f94c261ed52d4f0f93c42e5c7eaa8f0edfea96aea197b0e176636a3d",
+            "url": "https://github.com/HenriWahl/Nagstamon/releases/download/v3.6.0/Nagstamon-3.6.0-win32.zip",
+            "hash": "819ca5d6228bee1c482791503cbc629f8bddc3997f038545ad247c0c4cb30d4a",
             "extract_dir": "Nagstamon-3.6.0-win32"
         }
     },
@@ -31,7 +31,7 @@
                 "extract_dir": "Nagstamon-$version-win64"
             },
             "32bit": {
-                "url": "https://github.com/HenriWahl/Nagstamon/releases/download/v$version/Nagstamon-$version-win64.zip",
+                "url": "https://github.com/HenriWahl/Nagstamon/releases/download/v$version/Nagstamon-$version-win32.zip",
                 "extract_dir": "Nagstamon-$version-win32"
             }
         }
