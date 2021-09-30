@@ -1,0 +1,38 @@
+{
+    "version": "1.0.1",
+    "description": "Wsl distribution wrapper with cache manager.",
+    "homepage": "https://github.com/mbl-35/wslctl",
+    "license": "GPL-2.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/mbl-35/wslctl/releases/download/v1.0.1/wslctl-v1.0.1-win64.zip",
+            "hash": "80ea3d268da189d81e0929a14127cc3f0cefc5f1faedabfceb2de6fa0be2ac2a"
+        },
+        "32bit": {
+            "url": "https://github.com/mbl-35/wslctl/releases/download/v1.0.1/wslctl-v1.0.1-win32.zip",
+            "hash": "fff673aefaded983119ad1796f03f206b63a5e4b9560a8f90b5538810232be41"
+        }
+    },
+    "bin": "wslctl.exe",
+    "shortcuts": [
+        [
+            "wslctl.exe",
+            "wslctl"
+        ]
+    ],
+    "persist": "config",
+    "notes": "The default configuration directory of Wslctl is %HOME%\\.wslctl\\",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/mbl-35/wslctl/releases/download/v$version/wslctl-v$version-win64.zip",
+                "extract_dir": "Wslctl-$version-win64"
+            },
+            "32bit": {
+                "url": "https://github.com/mbl-35/wslctl/releases/download/v$version/wslctl-v$version-win32.zip",
+                "extract_dir": "Wslctl-$version-win32"
+            }
+        }
+    }
+}
