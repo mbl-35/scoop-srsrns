@@ -1,16 +1,16 @@
 {
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Wsl distribution wrapper with cache manager.",
     "homepage": "https://github.com/mbl-35/wslctl",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mbl-35/wslctl/releases/download/v1.0.3/wslctl-v1.0.3-win64.zip",
-            "hash": "2fea8abc6ed485cc3a015ccb8a606d65144335f10d893a3251044b88f5f44d90"
+            "url": "https://github.com/mbl-35/wslctl/releases/download/v1.0.4/wslctl-v1.0.4-win64.zip",
+            "hash": "a2362030f0e1199189b958fa415fd4d4bf09604869a32dad8d264900014cd4cb"
         },
         "32bit": {
-            "url": "https://github.com/mbl-35/wslctl/releases/download/v1.0.3/wslctl-v1.0.3-win32.zip",
-            "hash": "2fea8abc6ed485cc3a015ccb8a606d65144335f10d893a3251044b88f5f44d90"
+            "url": "https://github.com/mbl-35/wslctl/releases/download/v1.0.4/wslctl-v1.0.4-win32.zip",
+            "hash": "a2362030f0e1199189b958fa415fd4d4bf09604869a32dad8d264900014cd4cb"
         }
     },
     "bin": "wslctl.ps1",
