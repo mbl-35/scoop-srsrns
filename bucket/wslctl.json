@@ -1,18 +1,19 @@
 {
-    "version": "2.1.0",
+    "version": "2.1.1",
     "description": "Wsl distribution wrapper with cache manager.",
     "homepage": "https://github.com/mbl-35/wslctl",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mbl-35/wslctl/releases/download/v2.1.0/wslctl-v2.1.0-win64.zip",
-            "hash": "3058551be7a2c08ced7b8e6024f10dd7f269e3243c9de5bef4f19727a8d83f64"
+            "url": "https://github.com/mbl-35/wslctl/releases/download/v2.1.1/wslctl-v2.1.1-win64.zip",
+            "hash": "22a562d2a1512922fe791c2420508094d91e313fe2d4b8a5ab0eb72154f63f18"
         },
         "32bit": {
-            "url": "https://github.com/mbl-35/wslctl/releases/download/v2.1.0/wslctl-v2.1.0-win32.zip",
-            "hash": "3058551be7a2c08ced7b8e6024f10dd7f269e3243c9de5bef4f19727a8d83f64"
+            "url": "https://github.com/mbl-35/wslctl/releases/download/v2.1.1/wslctl-v2.1.1-win32.zip",
+            "hash": "22a562d2a1512922fe791c2420508094d91e313fe2d4b8a5ab0eb72154f63f18"
         }
     },
+    "notes": "Because of Powershell cache, you need to restart console after upgrade",
     "bin": "wslctl.ps1",
     "persist": "wslctl.json",
     "pre_install": [
