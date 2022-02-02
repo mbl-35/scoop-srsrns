@@ -1,6 +1,6 @@
 {
     "version": "0.0.1",
-    "description": "Add explorer context menu entries for vscode - English version.",
+    "description": "Add explorer context menu entries for vscode - French version.",
     "depends": "extras/vscode",
     "url": [
         "https://raw.githubusercontent.com/mbl-35/scoop-srsrns/main/scripts/vscode-install-context.reg",
