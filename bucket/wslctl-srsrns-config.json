@@ -1,0 +1,19 @@
+{
+    "version": "0.0.1",
+    "description": "Set wslctl configuration for SRSRNS",
+    "depends": "wslctl",
+    "url": [
+        "https://raw.githubusercontent.com/mbl-35/scoop-srsrns/master/scripts/wslctl-srsrns-install-config.ps1",
+        "https://raw.githubusercontent.com/mbl-35/scoop-srsrns/master/scripts/wslctl-srsrns-uninstall-config.ps1"
+    ],
+    "hash": [
+        "ace6aa1e5a574aef2e511001982544ae6bcad43cddbf1d4dcf0a85ec03eda3ea",
+        "85c9e986c9fa4f4f907d09ce2fe9a24f1cd727baecc574634f3617451fdd25bb"
+    ],
+    "installer": {
+        "script": "&(Get-Command powershell.exe) \"$dir\\wslctl-srsrns-install-config.ps1\""
+    },
+    "uninstaller": {
+        "script": "&(Get-Command powershell.exe) \"$dir\\wslctl-srsrns-uninstall-config.ps1\""
+    }
+}
