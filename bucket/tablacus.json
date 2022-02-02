@@ -1,9 +1,9 @@
 {
     "homepage": "https://tablacus.github.io/explorer_en.html",
     "license": "MIT",
-    "version": "22.1.25",
-    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/22.1.25/te220125.zip",
-    "hash": "68716f823bdacd47db44c2eb6b80eab44676835a19501bdc4f1d0095e17cf205",
+    "version": "22.2.1",
+    "url": "https://github.com/tablacus/TablacusExplorer/releases/download/22.2.1/te220201.zip",
+    "hash": "4d4ae5c9768d3fb7e58afc86777184e1a4a7ef101cbdcc3c3878cc79d73001fb",
     "architecture": {
         "64bit": {
             "pre_install": [
