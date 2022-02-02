@@ -1,0 +1,63 @@
+{
+    "version": "96.0.3",
+    "description": "Popular open source web browser (french lang pack).",
+    "homepage": "https://www.mozilla.org/firefox/",
+    "license": "MPL-2.0",
+    "notes": [
+        "To set profile 'Scoop' as *DEFAULT*, or profiles/settings was lost after update:",
+        "  - Run 'Firefox Profile Manager', choose 'Scoop' then click 'Start Firefox'.",
+        "  - Visit 'about:profiles' page in Firefox to check *DEFAULT* profile.",
+        "For details: https://support.mozilla.org/fr/kb/profile-manager-create-remove-switch-firefox-profiles"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://archive.mozilla.org/pub/firefox/releases/96.0.3/win64/fr/Firefox%20Setup%2096.0.3.exe#/dl.7z",
+            "hash": "sha512:492de400b6e495aa5bd85e4901eaa271b69bca7b9595a5c40cfa33933ec7317226f2c4f0ff46dbcb3e613769b0522936a6cf752f74db36ad47649a096fad04c4"
+        },
+        "32bit": {
+            "url": "https://archive.mozilla.org/pub/firefox/releases/96.0.3/win32/fr/Firefox%20Setup%2096.0.3.exe#/dl.7z",
+            "hash": "sha512:07df0e13cfee781f6ec9970613ae08073e91115feb0aa44a9d1fc2e8657f135bf073aad156e1727f20387ae5af7dc0660e20e51012a2f4995a7b351fb7391ab0"
+        }
+    },
+    "extract_dir": "core",
+    "post_install": "firefox -CreateProfile \"Scoop $dir\\profile\"",
+    "bin": "firefox.exe",
+    "shortcuts": [
+        [
+            "firefox.exe",
+            "Firefox"
+        ],
+        [
+            "firefox.exe",
+            "Firefox Profile Manager",
+            "-P"
+        ]
+    ],
+    "persist": [
+        "distribution",
+        "profile"
+    ],
+    "checkver": {
+        "url": "https://archive.mozilla.org/pub/firefox/releases/",
+        "regex": "pub/firefox/releases/(\\d+(\\.\\d+){2})/",
+        "reverse": true
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://archive.mozilla.org/pub/firefox/releases/$version/win64/fr/Firefox%20Setup%20$version.exe#/dl.7z",
+                "hash": {
+                    "url": "https://archive.mozilla.org/pub/firefox/releases/$version/SHA512SUMS",
+                    "regex": "$sha512\\s+win64/fr/$basename"
+                }
+            },
+            "32bit": {
+                "url": "https://archive.mozilla.org/pub/firefox/releases/$version/win32/fr/Firefox%20Setup%20$version.exe#/dl.7z",
+                "hash": {
+                    "url": "https://archive.mozilla.org/pub/firefox/releases/$version/SHA512SUMS",
+                    "regex": "$sha512\\s+win32/fr/$basename"
+                }
+            }
+        }
+    }
+}
