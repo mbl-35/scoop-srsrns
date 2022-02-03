@@ -14,7 +14,7 @@ $scoop_buckets = @(
     'vlc',                                  # VLC media player
     'googlechrome',                         # Google Browser
     #'ungoogled-chrome',                    # Browser aiming for safer/faster and more stable way
-    'firefox',                              # Popular open source web browser
+    #'firefox',                             # Popular open source web browser
     'srsrns/firefox',                       # Firefox French version pre-configured
     'firefox-addon-adblock-ultimate',       # AdBlocUltimate Firefox addon
     'brave',                                # Secure, Fast & Private Web Browser with Adblocker
