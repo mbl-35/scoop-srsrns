@@ -6,7 +6,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sakai135/wsl-vpnkit/releases/download/v0.3.0/wsl-vpnkit.tar.gz",
+            "url": "https://github.com/sakai135/wsl-vpnkit/releases/download/v0.3.0/wsl-vpnkit.tar.gz#/wsl-vpnkit.pack",
             "hash": "b5fa9249553ff3be310923fb1ee7c10a8798bc30a9c5ee392ca07bd5c6eb8a03"
         }
     },
