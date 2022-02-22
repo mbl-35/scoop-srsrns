@@ -1,13 +1,13 @@
 {
-    "version": "0.2.5",
+    "version": "0.3.0",
     "description": "Provide network connectivity to the WSL2 VM while connected to VPNs on the Windows host",
     "homepage": "https://github.com/sakai135/wsl-vpnkit",
     "depends": "srsrns/wslctl",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sakai135/wsl-vpnkit/releases/download/v0.2.5/wsl-vpnkit.tar.gz#/wsl-vpnkit.pack",
-            "hash": "8339a1a56cd8cc93e00302aa9c929d2c79c0a36ac7ec6486a4dec795d09e5de6"
+            "url": "https://github.com/sakai135/wsl-vpnkit/releases/download/v0.3.0/wsl-vpnkit.tar.gz",
+            "hash": "b5fa9249553ff3be310923fb1ee7c10a8798bc30a9c5ee392ca07bd5c6eb8a03"
         }
     },
     "checkver": "github",
