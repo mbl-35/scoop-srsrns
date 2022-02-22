@@ -14,7 +14,7 @@
         "script": [
             "$packageName = 'firefox-addon-keefox'",
             "$extensionID = 'keefox@chris.tomlinson'",
-            "$installDir = Get-Item -Path Registry::HKEY_CURRENT_USER\\SOFTWARE\\Mozilla\\Firefox\\TaskBarIDs | Select-Object -ExpandProperty Property",
+            "$installDir = \"$(appdir firefox $global)\\current\".Replace('\\','\\\\')",
             "$browserFolder = Join-Path $installDir 'distribution'",
             "$extensionsFolder = Join-Path $browserFolder 'extensions'",
             "$extFile = Join-Path $extensionsFolder \"$extensionID.xpi\"",
@@ -29,7 +29,7 @@
     "uninstaller": {
         "script": [
             "$extensionID = 'keefox@chris.tomlinson'",
-            "$installDir = Get-Item -Path Registry::HKEY_CURRENT_USER\\SOFTWARE\\Mozilla\\Firefox\\TaskBarIDs | Select-Object -ExpandProperty Property",
+            "$installDir = \"$(appdir firefox $global)\\current\".Replace('\\','\\\\')",
             "$browserFolder = Join-Path $installDir 'distribution'",
             "$extensionsFolder = Join-Path $browserFolder 'extensions'",
             "$extFile = Join-Path $extensionsFolder \"$extensionID.xpi\"",
