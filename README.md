@@ -19,7 +19,7 @@ This repo can be used for :
 ### Integrate to an existing scoop instance
 
 ```PS1
-scoop bucket add srsrns https://raw.githubusercontent.com/mbl-35/scoop-srsrns
+scoop bucket add srsrns https://github.com/mbl-35/scoop-srsrns
 ```
 
 ### OneLine Install
