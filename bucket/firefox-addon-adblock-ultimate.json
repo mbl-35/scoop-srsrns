@@ -1,15 +1,15 @@
 {
-    "version": "3.7.16",
+    "version": "3.7.18",
     "description": "Add AdBlock Ultimate firefox addon.",
-	"homepage" : "https://adblockultimate.net/",
-	"licence": "GNU General Public License v3.0",
+    "homepage": "https://adblockultimate.net/",
+    "licence": "GNU General Public License v3.0",
     "depends": "firefox",
-	"notes": [
+    "notes": [
         "WARNING: 'Scoop' MUST be the *DEFAULT* profiles. Please see Note for firefox bucket:",
         "  'scoop info firefox'"
     ],
-    "url": "https://addons.mozilla.org/firefox/downloads/file/3877418/adblocker_ultimate-3.7.16-an+fx.xpi#/addon-ff",
-	"hash": "29fc0eb89ae7bc5af31a6932bc167627af4a1eab9db2c8a5fcc688c73bd6eb6e",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/3877418/adblocker_ultimate-3.7.18-an+fx.xpi#/addon-ff",
+    "hash": "29fc0eb89ae7bc5af31a6932bc167627af4a1eab9db2c8a5fcc688c73bd6eb6e",
     "installer": {
         "script": [
             "$packageName = 'firefox-addon-adblock-ultimate'",

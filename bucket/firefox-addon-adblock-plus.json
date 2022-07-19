@@ -1,15 +1,15 @@
 {
-    "version": "3.11.4",
+    "version": "3.14.1",
     "description": "Add AdBlockPlus firefox addon.",
-	"homepage" : "https://adblockplus.org/",
-	"licence": "GNU General Public License v3.0",
+    "homepage": "https://adblockplus.org/",
+    "licence": "GNU General Public License v3.0",
     "depends": "firefox",
-	"notes": [
+    "notes": [
         "WARNING: 'Scoop' MUST be the *DEFAULT* profiles. Please see Note for firefox bucket:",
         "  'scoop info firefox'"
     ],
-    "url": "https://addons.mozilla.org/firefox/downloads/file/3872123/adblock_plus-3.11.4-an+fx.xpi#/addon-ff",
-	"hash": "d00391dd04c5b48c0d98c8b058fc2717b82800cd89dd8acadb78e6a44438e82f",
+    "url": "https://addons.mozilla.org/firefox/downloads/file/3872123/adblock_plus-3.14.1-an+fx.xpi#/addon-ff",
+    "hash": "d00391dd04c5b48c0d98c8b058fc2717b82800cd89dd8acadb78e6a44438e82f",
     "installer": {
         "script": [
             "$packageName = 'firefox-addon-adblockplus'",
@@ -19,10 +19,10 @@
             "$extensionsFolder = Join-Path $browserFolder 'extensions'",
             "$extFile = Join-Path $extensionsFolder \"$extensionID.xpi\"",
             "if (!(Test-Path $extFile)) {",
-                "New-Item -Force -ItemType directory -Path $extensionsFolder | Out-Null",
-                "Move-Item \"$dir\\addon-ff\" \"$extensionsFolder\\$extensionID.xpi\" -Force",
+            "New-Item -Force -ItemType directory -Path $extensionsFolder | Out-Null",
+            "Move-Item \"$dir\\addon-ff\" \"$extensionsFolder\\$extensionID.xpi\" -Force",
             "} else {",
-                "Write-Host \"$packageName already exists\"",
+            "Write-Host \"$packageName already exists\"",
             "}"
         ]
     },
