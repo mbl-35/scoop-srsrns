@@ -1,5 +1,5 @@
 {
-    "version": "22.001.20169",
+    "version": "22.002.20191",
     "description": "Adobe Reader. Global standard for reliably viewing, printing, and commenting on PDF documents.",
     "homepage": "https://get.adobe.com/reader/",
     "license": {
@@ -12,8 +12,8 @@
             "extras/vcredist2013"
         ]
     },
-    "url": "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/2200120169/AcroRdrDC2200120169_en_US.exe#/cosi.7z",
-    "hash": "3f0fcc53dff0eaf3b638ace538b618a9369f131c68e599beaa614b45c895ad13",
+    "url": "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/2200220191/AcroRdrDC2200220191_en_US.exe#/cosi.7z",
+    "hash": "0d434c796a37cfb648e7dbaf4219965076f034e5662a160ea5d626d19baf20b2",
     "installer": {
         "script": [
             "Expand-MsiArchive \"$dir\\AcroRead.msi\" -DestinationPath \"$dir\\cosi\"",
