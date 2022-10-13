@@ -7,8 +7,8 @@
         "https://raw.githubusercontent.com/mbl-35/scoop-srsrns/master/scripts/wslctl-srsrns-uninstall-config.ps1"
     ],
     "hash": [
-        "ace6aa1e5a574aef2e511001982544ae6bcad43cddbf1d4dcf0a85ec03eda3ea",
-        "85c9e986c9fa4f4f907d09ce2fe9a24f1cd727baecc574634f3617451fdd25bb"
+        "8bf9f778bc3b1ceac0046669760de59d13a4eb4acc2564ed3f40f48e5195f2bf",
+        "7a166b71137137bc11793146761edc1d9eea16a8671c59da502a27634e732903"
     ],
     "installer": {
         "script": "&(Get-Command powershell.exe) \"$dir\\wslctl-srsrns-install-config.ps1\""
