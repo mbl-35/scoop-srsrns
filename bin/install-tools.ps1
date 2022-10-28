@@ -4,13 +4,13 @@ $old_erroractionpreference = $erroractionpreference
 $erroractionpreference = 'stop' # quit if anything goes wrong
 
 $scoop_registries = @{
-    scoopux  = 'https://github.com/prezesp/scoop-viewer-bucket.git'       # Requiered by scoop-viewer
+    #scoopux  = 'https://github.com/prezesp/scoop-viewer-bucket.git'       # Requiered by scoop-viewer
     srsrns   = 'https://github.com/mbl-35/scoop-srsrns.git'               # Requiered by srsrns tools
 }
 
 $scoop_buckets = @(
     '7zip',                                 # Compress/Uncompress Tool
-    #'scoop-viewer',                        # A gui client for scoop
+    #'scoop-viewer',                        # A gui client for scoop requiere scoopux registry activation
     'vlc',                                  # VLC media player
     'googlechrome',                         # Google Browser
     #'ungoogled-chrome',                    # Browser aiming for safer/faster and more stable way
