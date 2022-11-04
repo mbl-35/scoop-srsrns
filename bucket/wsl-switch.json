@@ -1,20 +1,14 @@
 {
-    "version": "0.3",
+    "version": "0.5",
     "description": "Switch the activation of certain services from one WSL instance to another.",
     "homepage": "https://github.com/Nyuwb/wsl-switch",
     "license": "MIT License",
-    "url": "https://github.com/Nyuwb/wsl-switch/archive/refs/tags/v0.3.zip",
-    "hash": "46845e519cdaf7b26ea4da6d5e027b6d423e1f224b38da6507bda5688d7744b4",
+    "url": "https://github.com/Nyuwb/wsl-switch/releases/download/v0.5/wsl-switch-v0.5.zip",
+    "hash": "83497a31cce3555b828cc7bd47f503414eefd4147f87b10acf24a525a5b2ed18",
     "bin": "wsl-switch.ps1",
-    "installer": {
-        "script": [
-            "Move-Item -Path \"$dir\\wsl-switch-$version\\*\" -Destination \"$dir\"",
-            "Remove-Item \"$dir\\wsl-switch-$version\""
-        ]
-    },
     "persist": "config.json",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Nyuwb/wsl-switch/archive/refs/tags/v$version.zip"
+        "url": "https://github.com/Nyuwb/wsl-switch/releases/download/v$version/wsl-switch-v$version.zip"
     }
 }
