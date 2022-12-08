@@ -4,7 +4,7 @@
     "homepage": "https://github.com/mbl-35/wslctl",
     "license": "GPL-2.0-only",
     "url": "https://github.com/mbl-35/wslctl/releases/download/v2.3.0/wslctl-v2.3.0.zip",
-    "hash": "9f4383dc1b882583e4dcad0fc92b4ccdcdd001bfec58d6309371bc997c1a5576",
+    "hash": "cbe9c93d61a85f80c1a26739f8a906807414df885eeabb1f6fb874c0e1a768de",
     "bin": "wslctl.ps1",
     "persist": "wslctl.json",
     "pre_install": [
