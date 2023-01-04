@@ -1,10 +1,10 @@
 {
-    "version": "2.3.0",
+    "version": "2.3.1",
     "description": "Wsl distribution wrapper with cache manager.",
     "homepage": "https://github.com/mbl-35/wslctl",
     "license": "GPL-2.0-only",
-    "url": "https://github.com/mbl-35/wslctl/releases/download/v2.3.0/wslctl-v2.3.0.zip",
-    "hash": "cbe9c93d61a85f80c1a26739f8a906807414df885eeabb1f6fb874c0e1a768de",
+    "url": "https://github.com/mbl-35/wslctl/releases/download/v2.3.1/wslctl-v2.3.1.zip",
+    "hash": "4b084f5c33c7a4067d179e2795c50b909c4c1b62b47391aeb4c41d90f9c6512d",
     "bin": "wslctl.ps1",
     "persist": "wslctl.json",
     "pre_install": [
